@@ -1,0 +1,45 @@
+body{
+    background: #fafafa;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(./imgs/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cacto{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(/imgs/cactus.png);
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes deslizaParaDireita {
+    0% {
+        background-position: 70000%;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(/imgs/background.png);
+    background-repeat: repeat-x;
+    animation: deslizaParaDireita 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
